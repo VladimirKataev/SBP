@@ -1,0 +1,18 @@
+What to Do:							Progress:
+Cracking The Coding interview code				Ch.1. Done. Might Need Polish.	Done in C++
+								Ch.2. Done. Might Need Polish 	Done in C++
+								Ch.3. Doing right now. 		In Progress, Java
+Cracking The Coding Interview Website/Bash			0. Will be Demo'd on craptop
+Project Katya							Kinda fucked. Time ran out. Underprepared from the start. "But what if she says yes". Also, she's just a kid, I wouldn't have said yes if I was her age. Seems open to try again in a year
+ReOrganization/Github-ing					Memes Done. Github Probs needs updating for SBP. A local backup of important shit for me seems useful. Would literally kill anyone after my memes.
+Website								Needs to exit
+Resume								Needs Major revamp
+
+Langs:
+	Project Craptop
+	Bash
+	Shortcutese Python
+	C++
+	Java
+	HTML && Javascript?
+	GPG
