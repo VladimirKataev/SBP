@@ -22,5 +22,8 @@ public class Stack<T>{
 		top = top.nxt;
 		return tmp.dat;
 	}
+<<<<<<< HEAD
 	boolean isEmpty(){ return top == null;}
+=======
+>>>>>>> 57462fbb641ad39c43ef7074f75faef70973ed25
 }

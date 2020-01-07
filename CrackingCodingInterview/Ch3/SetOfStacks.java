@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 public class SetOfStacks<T>{
 	int capacity = 5;
 	int topSize = 0;
@@ -32,6 +33,10 @@ public class SetOfStacks<T>{
 		return tmp;
 	}
 
+=======
+public class SetOfStacks{
+	
+>>>>>>> 57462fbb641ad39c43ef7074f75faef70973ed25
 
 
 }

@@ -1,5 +1,6 @@
 public class tasks{
 	public static void main(String[] args){
+<<<<<<< HEAD
 		System.out.println("Making a new setOfStacks (set)");
 		SetOfStacks<Integer> set = new SetOfStacks<Integer>();
 		set.push(1);
@@ -29,6 +30,11 @@ public class tasks{
 		System.out.println("Top Value is :"+ set.pop());
 		System.out.println("Top Value is :"+ set.pop());
 		System.out.println("Top Value is :"+ set.pop());
+=======
+
+
+
+>>>>>>> 57462fbb641ad39c43ef7074f75faef70973ed25
 
 	}
 }

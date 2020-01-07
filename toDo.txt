@@ -5,8 +5,12 @@ Cracking The Coding interview code				Ch.1. Done. Might Need Polish.	Done in C++
 Cracking The Coding Interview Website/Bash			0. Will be Demo'd on craptop
 Project Katya							Kinda fucked. Time ran out. Underprepared from the start. "But what if she says yes". Also, she's just a kid, I wouldn't have said yes if I was her age. Seems open to try again in a year
 ReOrganization/Github-ing					Memes Done. Github Probs needs updating for SBP. A local backup of important shit for me seems useful. Would literally kill anyone after my memes.
+<<<<<<< HEAD
 Website								Needs to exit
 Resume								Needs Major revamp
+=======
+
+>>>>>>> 57462fbb641ad39c43ef7074f75faef70973ed25
 
 Langs:
 	Project Craptop
