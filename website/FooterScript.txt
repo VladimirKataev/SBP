@@ -1,0 +1,11 @@
+		</div>
+		
+	
+
+		<div class="footer">
+		Webpages made by Vladimir Kataev
+		</div>
+	</body>
+
+</html>
+

@@ -26,20 +26,3 @@
 
 		</ul>
 
-		<div class="post" id="firstPost">
-			<div class="miniTitle">First Post</div>
-			Hello there. My name is Vladimir Kataev and I made this website quickly.
-
-		</div>
-
-		</div>
-		
-	
-
-		<div class="footer">
-		Webpages made by Vladimir Kataev
-		</div>
-	</body>
-
-</html>
-
