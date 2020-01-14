@@ -1,0 +1,21 @@
+Generates List of WebPages by manifest.
+Program used to avoid manually copy-pasting source code.
+
+Input: Manifest.txt
+"Manifest" is to be a file describing filenames to be used.
+Within it:
+GlobalHeader = "HeaderScript.txt"	<---One
+pageName1 = "bodyPost1.txt"		<---Multiple
+pageName2 = "bodyPost2.txt"		<---Multiple
+pageName3 = "bodyPost3.txt"		<---Multiple
+GlobalFooter = "FooterScript.txt"	<---One
+
+Idea is to, upon code execution, create a series of pages
+
+Output:
+pageName1.html as GlobalHeader + bodyPost1.txt + GlobalFooter
+pageName2.html as GlobalHeader + bodyPost2.txt + GlobalFooter
+pageName3.html as GlobalHeader + bodyPost3.txt + GlobalFooter
+
+If no GlobalHeader defined, use nothing (subject to change)
+If no GlobalFooter defined, use nothing (subject to change)

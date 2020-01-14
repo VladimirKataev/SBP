@@ -1,0 +1,3 @@
+GlobalHeader="HeaderScript.txt"
+GlobalFooter="FooterScript.txt"
+home="home.txt"
