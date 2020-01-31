@@ -1,80 +1,51 @@
 #include<iostream>
 #include<string>
 
-bool allCharsUnique(char* in){ //All input expected lowercase, plz don't break
-//Create array of 24 booleans, one per letter of alphabet
-//As each in letter parsed, mark off each bool.
-	//If a bool is true, return false
-	//if \0 reached, return true
+bool allCharsUnique(char* in){//All input expected ASCII
 //O(n) runtime
+	bool alphabet[256];	//Doesn't need delete: stack clears upon function end
 
-
-	bool alphabet[26];	//Doesn't need delete: stack clears upon function end
-
-	for(int i=0; i<26; i++)	//ReZero
+	for(int i=0; i<256; i++)	//ReZero
 		alphabet[i]=false;
 
-	int a=0;
 	char cmp = *in;
 
-	while(cmp != '\0'){
-		if(alphabet[cmp - 97] == false)
-			alphabet[cmp -97] = true;
-		else
-			return false;
-		a++;
-		cmp = *(in+a);
+	for(char* iter = in; *in != '\0'; in++){
+		if(alphabet[(int)*in]) return false;
+		alphabet[(int)*in] = true;
 	}
-
-	return true; //placeholder tmp
+	return true;
 }
 
 
-bool checkPermutation(char* inA, char* inB){//Expect all lowercase entry, can break with single \0 in
-//Create array of ints, figure out which letters used which many times, for both words.
+bool checkPermutation(char* inA, char* inB){
 //Letter histograms equal:return true? return false;
-//O(3n), or O(n)
+//O(n)
 
-	int histA[26], histB[26];
-	for(int a = 0; a < 26; a++){histA[a] = 0;histB[a] = 0;}	//ReZero
+//ASSUMPTION: one-to-one permutation expected
+//'cat' is not a permutation of 'racetrack'
+
+	int histA[256], histB[256];
+	for(int a = 0; a < 256; a++){
+		histA[a] = 0; histB[a] = 0;
+	}
+
+	for(char* ap = inA; *ap != '\0'; ap++)
+		histA[(int) *ap]++;
+	for(char* bp = inA; *bp != '\0'; bp++)
+		histB[(int) *bp]++;
+
+	for(int a = 0; a < 256; a++){
+		if(histA[a] != histB[a]) return false;
+	}
 
 
-	for(char* cmp = inA; *cmp != '\0'; cmp++)
-		histA[*cmp - 97]++;
-
-        for(char* cmp = inB; *cmp != '\0'; cmp++)
-                histB[*cmp - 97]++;
-
-	for(int j = 0; j < 26; j++)
-		if(histA[j] != histB[j])
-			return false;
 	return true;
 
 }
 
 char* urlify(char* in, int argc){
 	//O(n) complexity
-
-	int origLen = argc;
-	int spaces = 0;
-
-	for(int i = 0; i < origLen; i++)
-		if(*(in+i) == ' ')
-			spaces++;
-
-	int newLen = origLen = (2*spaces);
-
-	char* toRet = new char[newLen];	//ALLOCATES MEMORY MUST CLEAR
-	int added = 0;
-	for(char* add = in; *add != '\0'; add++){
-		if(*add != ' ')
-			toRet[added++] = *add;
-		else{
-			toRet[added++] = '%';
-			toRet[added++] = '2';
-			toRet[added++] = '0';
-		}
-	}
 	return toRet;
 }
 
