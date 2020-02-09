@@ -23,11 +23,11 @@ bodies = []
 
 #-------------------------Man file parsing, header/footer creation--------
 for line in manFile:
-	print(line)
+	#print(line)
 
 	if(line.startswith("GlobalHeader=")): #Finding Header
 		headerName = line[line.find('=')+2:len(line)-2]
-		print(headerName + " set to header filename\n")
+		#print(headerName + " set to header filename\n")
 		try:
 			headFile = open(headerName)
 			headerBody = headFile.read() #Filling headerBody
@@ -37,7 +37,7 @@ for line in manFile:
 
 	elif(line.startswith("GlobalFooter=")):
 		footerName = line[line.find('=')+2:len(line)-2]
-		print(footerName + " set to footer filename\n")
+		#print(footerName + " set to footer filename\n")
 		try:
 			footerFile = open(footerName)
 			footerBody = footerFile.read() #Filling footerBody
@@ -45,8 +45,8 @@ for line in manFile:
 		except:
 			print(footerName + " doesn't exist.\n")
 	else:
-		bodyNames.append(line[0:line.find("=")])
-		print("Added "+ line[0:line.find("=")] + " to bodyNames.\n")
+		bodyNames.append(line[:line.find("=")])
+		#print("Added "+ line[0:line.find("=")] + " to bodyNames.\n")
 		try:
 			bodyFiles.append(open(line[line.find('=')+2:len(line)-2]))
 			bodies.append(bodyFiles[-1].read())
@@ -56,6 +56,9 @@ for line in manFile:
 
 
 a = 0
+print(bodyNames)
+print(bodies)
+
 for page in bodies:
 	#page = headerBody + page + footerBody
 	fileOut = open(bodyNames[a]+".html", "w")

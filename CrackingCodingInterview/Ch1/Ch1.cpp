@@ -8,12 +8,12 @@ bool allCharsUnique(char* in){//All input expected ASCII
 	for(int i=0; i<256; i++)	//ReZero
 		alphabet[i]=false;
 
-	char cmp = *in;
 
-	for(char* iter = in; *in != '\0'; in++){
-		if(alphabet[(int)*in]) return false;
-		alphabet[(int)*in] = true;
-	}
+	for(; *in; in++)
+		if(alphabet[(int)*in])
+                	return false;
+		else
+			alphabet[(int)*in] = true;
 	return true;
 }
 
