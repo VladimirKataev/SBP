@@ -57,8 +57,34 @@ body{
 	padding-bottom: 25px;
 	padding-right: 25px;
 
-
-
-
-
 }
+#liteButton{ 
+        border: 0px solid white;
+        transition-duration: 0.3s;
+        background-color: #CCD;
+}
+#liteButton:hover{ 
+        background-color: #AAC;
+        border-radius: 8px;
+}
+
+#hackerButton{
+	background-color: #000;
+	color: #0F0;
+	border: 3px solid green;
+}
+#hackerButton:hover{
+	background-color: #0F0;
+	color: #000;
+}
+
+#defaultButton{
+	background-color: #999;
+	border: 3px solid black
+}
+
+#defaultButton:hover{
+	background-color: #777;
+}
+
+
