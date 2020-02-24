@@ -2,7 +2,25 @@
 	<head>
 		<meta charset ="utf-8">
 		<title>Vladimir's Webpage</title>
-		<link rel="stylesheet" type="text/css" href="VladStyleSheet.css">
+		<link id="styleSheetPart" rel="stylesheet" type="text/css" href="VladStyleSheet.css">
+		<script>
+			localStorageAllowed = false;
+			function toggleStorage(){
+				localStorageAllowed = !localStorageAllowed;
+				console.log("localStorageAllowed = " + localStorageAllowed);
+			}
+
+			function setDefaultTheme(){
+				document.getElementById("styleSheetPart").href = "VladStyleSheet.css";
+			}
+			function setHackerTheme(){
+				document.getElementById("styleSheetPart").href = "VladHackerStyleSheet.css";
+			}
+			function setLiteTheme(){
+				document.getElementById("styleSheetPart").href = "VladLiteStyleSheet.css";
+			}
+
+		</script>
 	</head>
 	<body>
 		<h1 class="header">Quick page about my skillz</h1>
