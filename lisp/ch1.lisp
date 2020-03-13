@@ -151,7 +151,7 @@
 
 )
 
-(print (elemCountIter 69 (list 69 2 4 69)))
+;(print (elemCountIter 69 (list 69 2 4 69)))
 
 
 (defun elemCounterRecurs (elem inList)
@@ -164,9 +164,26 @@
 	)
 )
 
-(print 
-	(elemCounterRecurs 69 (list 69 2 4 69))
+;(print 
+;	(elemCounterRecurs 69 (list 69 2 4 69))
+;)
+
+
+
+(defun summit (list) 
+	(apply #'+ (remove nil list))
 )
 
+;(print (summit (list 1 nil 2 nil 3)))
 
+(defun summitRecurs (list)
+	(if list
+		(if (car list)
+			(+ (car list) (summitRecurs (cdr list)))
+			(summitRecurs (cdr list))
+		)
+		0
+	)
+)
 
+;(print (summitRecurs (list 1 nil 2 nil 3)))
