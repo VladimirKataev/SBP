@@ -1,12 +1,14 @@
 body{
-	background-color:#FFF;
+	background-color: #DDF;
 }
 .header{
-	background-color:#bbb;
+	background-color:#bbf;
 	text-align: center;
 	font-size:32px;
 	border: 10px solid black;
 	height: 5%;
+	border-radius: 15px;
+
 }
 
 .miniTitle{
@@ -19,7 +21,7 @@ body{
 
 
 .sidebar{
-	background-color:#777;
+	background-color:#bbf;
 	padding-right: 10px;
 	padding-left: 10px;
 	padding-top: 1%;
@@ -28,6 +30,9 @@ body{
 	position: fixed;
 	overflow: auto;
 	width: 10%;
+	border-radius: 15px;
+
+
 }
 
 .post{
@@ -39,10 +44,14 @@ body{
 	padding-left: 25px;
 	padding-bottom: 25px;
 	padding-right: 25px;
+	border-radius: 15px;
+	background-color: #BBF;
 }
 
 #firstPost{
 	margin-top:3%
+	background-color: #BBF;
+
 }
 
 
@@ -51,7 +60,7 @@ body{
 .footer{
 	text-align: center;
 	border: 5px solid black;
-		
+	border-radius: 15px;
 	padding-top: 25px;
 	padding-left: 25px;
 	padding-bottom: 25px;
