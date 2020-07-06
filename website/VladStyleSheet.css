@@ -51,12 +51,12 @@ body{
 .footer{
 	text-align: center;
 	border: 5px solid black;
-		
+	position: fixed;	
 	padding-top: 25px;
 	padding-left: 25px;
 	padding-bottom: 25px;
 	padding-right: 25px;
-
+	bottom: 3%;
 }
 #liteButton{ 
         border: 0px solid white;
@@ -87,4 +87,6 @@ body{
 	background-color: #777;
 }
 
-
+table, th, td{
+	border: 1px solid black;
+}
